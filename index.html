@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      background: transparent; /* No black background */
+      background: transparent;
     }
     .widget-container {
       background: linear-gradient(145deg, #111111, #1a1a1a);
@@ -19,7 +19,10 @@
       box-shadow: 0 0 25px rgba(168, 85, 247, 0.2),
                   inset 0 0 10px rgba(168, 85, 247, 0.05);
       padding: 10px;
-      width: 380px;
+      width: 100%;           /* FLEXIBLE */
+      max-width: 380px;      /* Max size */
+      min-width: 280px;      /* Min size */
+      margin: 0 auto;        /* Center */
       transition: all 0.3s ease;
     }
     .widget-container:hover {
@@ -39,7 +42,6 @@
 </head>
 <body>
   <div class="widget-container">
-    <!-- CLEAN IFRAME — NO INLINE STYLE -->
     <iframe 
       src="https://www.islamicfinder.org/prayer-widget/"
       scrolling="no"
