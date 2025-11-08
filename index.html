@@ -6,15 +6,11 @@
   <title>Prayer Times</title>
   <style>
     * { box-sizing: border-box; }
-    body {
+    html, body {
       margin: 0;
-      padding: 20px;
-      min-height: 100vh;
-      background: #0d0d0d;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 0;
+      height: 100%;
+      background: transparent; /* No black background */
     }
     .widget-container {
       background: linear-gradient(145deg, #111111, #1a1a1a);
@@ -37,15 +33,17 @@
       height: 360px;
       border-radius: 10px;
       background-color: #141414;
+      display: block;
     }
   </style>
 </head>
 <body>
   <div class="widget-container">
+    <!-- CLEAN IFRAME — NO INLINE STYLE -->
     <iframe 
-      src="https://www.islamicfinder.org/prayer-widget/2759794/shafi/1/0/18.0/17.0"
+      src="https://www.islamicfinder.org/prayer-widget/"
       scrolling="no"
-      title="Prayer Times Widget">
+      title="Prayer Times">
     </iframe>
   </div>
 </body>
